@@ -21,15 +21,15 @@ const PersonnelCard = ({
 
   return (
     <tr className="flex flex-row justify-between bg-gray-100 px-10 py-3  border-b-2 border-red-400">
-      <td>{personnel._id.slice(0, 8)}</td>
-      <td>{personnel.firstName}</td>
-      <td>{personnel.lastName}</td>
-      <td>{personnel.username}</td>
-      <td>{personnel.email}</td>
-      <td>{personnel.phoneNumber}</td>
-      <td>{personnel.salary}</td>
-      <td>{personnel.title}</td>
-      <td>{personnel.departmentId.name}</td>
+      <td>{personnel?._id.slice(0, 8)}</td>
+      <td>{personnel?.firstName}</td>
+      <td>{personnel?.lastName}</td>
+      <td>{personnel?.username}</td>
+      <td>{personnel?.email}</td>
+      <td>{personnel?.phoneNumber}</td>
+      <td>{personnel?.salary}</td>
+      <td>{personnel?.title}</td>
+      <td>{personnel?.departmentId?.name}</td>
       <td>
         <button
           className="bg-red-500 p-3 text-white rounded-lg"

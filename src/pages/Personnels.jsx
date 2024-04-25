@@ -39,8 +39,8 @@ const Personnels = () => {
           className="bg-gray-300 border px-10 py-3 font-bold  border-red-300 flex gap-5 justify-between items-center mx-auto"
         >
           <tr>Id</tr>
-          <tr>First Name</tr>
-          <tr>Last Name</tr>
+          <tr>FirstName</tr>
+          <tr>LastName</tr>
           <tr>UserName</tr>
           <tr>Email</tr>
           <tr>Phone Number</tr>
@@ -53,7 +53,7 @@ const Personnels = () => {
         <tbody>
           {personnels?.map((personnel) => (
             <PersonnelCard
-              key={personnel._id}
+              key={personnel?._id}
               personnel={personnel}
               setShowModal={setShowModal}
               showModal={showModal}
