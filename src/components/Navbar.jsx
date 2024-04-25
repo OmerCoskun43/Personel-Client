@@ -94,7 +94,7 @@ export function StickyNavbar() {
         <div className="flex items-center gap-4">
           <div className="mr-4 hidden lg:block">{navList}</div>
           <div>
-            {!user?.email && (
+            {!user?.email ? (
               <div className="flex gap-2">
                 {" "}
                 <Button
@@ -106,8 +106,8 @@ export function StickyNavbar() {
                   <span>Log In</span>
                 </Button>
               </div>
-            )}
-            {user?.email && (
+            ) : null}
+            {user?.email ? (
               <div className="flex gap-2">
                 <Button
                   variant="outlined"
@@ -127,7 +127,7 @@ export function StickyNavbar() {
                   <span>Logout</span>
                 </Button>
               </div>
-            )}
+            ) : null}
           </div>
           <IconButton
             variant="text"
@@ -171,7 +171,7 @@ export function StickyNavbar() {
       <Collapse open={openNav}>
         {navList}
         <div>
-          {!user?.email && (
+          {!user?.email ? (
             <div className="flex gap-4">
               <Button
                 onClick={() => navigate("/login")}
@@ -192,8 +192,8 @@ export function StickyNavbar() {
                 <span>Register</span>
               </Button>
             </div>
-          )}
-          {user?.email && (
+          ) : null}
+          {user?.email ? (
             <Button
               className="block bg-white hover:bg-black hover:text-white w-[49%] lg:hidden"
               fullWidth
@@ -203,7 +203,7 @@ export function StickyNavbar() {
             >
               <span>Logout</span>
             </Button>
-          )}
+          ) : null}
         </div>
       </Collapse>
     </Navbar>
