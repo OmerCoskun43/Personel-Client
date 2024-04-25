@@ -1,6 +1,6 @@
 const Departments = () => {
   return (
-    <div className="h-full border-green-400">
+    <div className=" bg-indigo-200 h-[calc(100vh-78px)]">
       <h1>Departments</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum labore

@@ -1,6 +1,6 @@
 const Admin = () => {
   return (
-    <div>
+    <div className=" bg-indigo-200 h-[calc(100vh-78px)]">
       <h1>Admin</h1>
     </div>
   );
